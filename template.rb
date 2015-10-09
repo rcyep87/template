@@ -10,6 +10,7 @@ gem 'bcrypt'
 gem 'react-rails'
 
 gem_group :production do
+  gem 'pg'
   gem 'puma'
   gem 'rails_12factor'
 end
