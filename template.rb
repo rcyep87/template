@@ -7,6 +7,7 @@ rake("db:create")
 gem 'faker'
 gem 'kaminari'
 gem 'bcrypt'
+gem 'react-rails'
 
 gem_group :production do
   gem 'puma'
@@ -14,7 +15,7 @@ gem_group :production do
 end
 
 if yes?("Using Bootstrap?")
-  gem 'boostrap-sass', '~> 3.3.5'
+  gem 'bootstrap-sass', '~> 3.3.5'
 else
   if yes?("Using Materialize?")
     gem 'materialize-sass'
@@ -33,4 +34,3 @@ after_bundle do
   git add: "."
   git commit: %Q{ -m 'Initial commit of TIY Rails Generator v0.1.0' }
 end
-
