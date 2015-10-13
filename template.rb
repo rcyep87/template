@@ -8,6 +8,8 @@ gem 'faker'
 gem 'kaminari'
 gem 'bcrypt'
 gem 'react-rails'
+gem 'figaro'
+gem 'mandrill_dm'
 
 gem_group :production do
   gem 'pg'
